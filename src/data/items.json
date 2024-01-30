@@ -1,0 +1,164 @@
+[
+  {
+    "id": 1,
+    "name": "Ягненок",
+    "description": "Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком",
+    "image": "/images/products/special-menu.jpg",
+    "weight": "225",
+    "price": "620",
+    "categories": [3, 7]
+  },
+  {
+    "id": "2",
+    "name": "Индейка",
+    "description": "Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком",
+    "image": "/images/products/special-menu-2.jpg",
+    "weight": "300",
+    "price": "550",
+    "categories": [3, 7]
+  },
+  {
+    "id": "3",
+    "name": "Щука",
+    "description": "Фаршированная яблоками",
+    "image": "/images/products/special-menu-3.jpg",
+    "weight": "225",
+    "price": "490",
+    "categories": [5, 7]
+  },
+  {
+    "id": "4",
+    "name": "Утка",
+    "description": "Фаршированная рисом, курагой и айвой",
+    "image": "/images/products/special-menu-4.jpg",
+    "weight": "225",
+    "price": "640",
+    "categories": [3, 7]
+  },
+  {
+    "id": "5",
+    "name": "Слабосоленый лосось",
+    "description": "Очень вкусно, пальчики оближешь",
+    "image": "/images/products/cold-snacks.jpeg",
+    "weight": "150",
+    "price": "620",
+    "categories": [1, 5]
+  },
+  {
+    "id": "6",
+    "name": "Мясная нарезка",
+    "description": "Очень вкусно, пальчики оближешь",
+    "image": "/images/products/cold-snacks-2.jpeg",
+    "weight": "300",
+    "price": "750",
+    "categories": [1]
+  },
+  {
+    "id": "7",
+    "name": "Сальце с чесночком",
+    "description": "Очень вкусно, пальчики оближешь",
+    "image": "/images/products/cold-snacks-3.jpeg",
+    "weight": "200",
+    "price": "490",
+    "categories": [1]
+  },
+  {
+    "id": "8",
+    "name": "Селедочка с лучком",
+    "description": "Очень вкусно, пальчики оближешь",
+    "image": "/images/products/cold-snacks-4.jpeg",
+    "weight": "300",
+    "price": "500",
+    "categories": [1, 5]
+  },
+  {
+    "id": "9",
+    "name": "Мидии",
+    "description": "Очень вкусно, пальчики оближешь",
+    "image": "/images/products/hot-snacks.jpeg",
+    "weight": "225",
+    "price": "620",
+    "categories": [2]
+  },
+  {
+    "id": "10",
+    "name": "Кольца кальмара",
+    "description": "Очень вкусно, пальчики оближешь",
+    "image": "/images/products/hot-snacks-2.jpeg",
+    "weight": "300",
+    "price": "550",
+    "categories": [2]
+  },
+  {
+    "id": "11",
+    "name": "Жареный сыр",
+    "description": "Очень вкусно, пальчики оближешь",
+    "image": "/images/products/hot-snacks-3.jpeg",
+    "weight": "225",
+    "price": "640",
+    "categories": [2]
+  },
+  {
+    "id": "12",
+    "name": "Куриный суп-лапша",
+    "description": "Очень вкусно, пальчики оближешь",
+    "image": "/images/products/soup.jpeg",
+    "weight": "300",
+    "price": "350",
+    "categories": [4]
+  },
+  {
+    "id": "13",
+    "name": "Дорадо",
+    "description": "Очень вкусно, пальчики оближешь",
+    "image": "/images/products/mangal.jpeg",
+    "weight": "350",
+    "price": "550",
+    "categories": [5, 6]
+  },
+  {
+    "id": "14",
+    "name": "Свиной шашлык",
+    "description": "Очень вкусно, пальчики оближешь",
+    "image": "/images/products/mangal-2.jpeg",
+    "weight": "350",
+    "price": "640",
+    "categories": [3, 6]
+  },
+  {
+    "id": "15",
+    "name": "Стейк",
+    "description": "Очень вкусно, пальчики оближешь",
+    "image": "/images/products/mangal-3.jpeg",
+    "weight": "400",
+    "price": "1900",
+    "categories": [3, 6]
+  },
+  {
+    "id": "16",
+    "name": "Яблочный сок",
+    "description": "Очень вкусно, пальчики оближешь",
+    "image": "/images/products/drinks.jpeg",
+    "weight": "1000",
+    "price": "150",
+    "categories": [8]
+  },
+  {
+    "id": "17",
+    "name": "Вишневый сок",
+    "description": "Очень вкусно, пальчики оближешь",
+    "image": "/images/products/drinks-2.jpeg",
+    "weight": "1000",
+    "price": "150",
+    "categories": [8]
+  },
+  {
+    "id": "18",
+    "name": "Апельсиновый сок",
+    "description": "Очень вкусно, пальчики оближешь",
+    "image": "/images/products/drinks-3.jpeg",
+    "weight": "1000",
+    "price": "150",
+    "categories": [8]
+  }
+]
