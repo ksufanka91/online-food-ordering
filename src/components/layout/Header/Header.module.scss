@@ -1,0 +1,59 @@
+.header {
+    position: sticky;
+    top: 0;
+    padding: 24px 0;
+    background-color: #403C3B;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 50px;
+
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+
+    &Left {
+        width: 60%;
+        align-items: center;
+    }
+
+    &Right {
+        width: 40%;
+    }
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+
+    &Info {
+
+    }
+
+    &Text {
+        font-size: 12px;
+    }
+
+    &Phone {
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--additional-text-color);
+    }
+}
+
+.contactsIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--main-color);
+}
+
+

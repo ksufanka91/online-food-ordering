@@ -1,0 +1,43 @@
+.inputBox {
+    position: relative;
+
+    &:before {
+        position: absolute;
+        content: '';
+        background: url("../../../../public/images/icons/location.svg") no-repeat;
+        width: 18px;
+        height: 21px;
+        top: 50%;
+        left: 18px;
+        transform: translateY(-50%);
+    }
+
+    &:after {
+        position: absolute;
+        content: '';
+        background: url("../../../../public/images/icons/search.svg") no-repeat;
+        width: 24px;
+        height: 24px;
+        top: 50%;
+        right: 16px;
+        transform: translateY(-50%);
+    }
+}
+
+.input {
+    max-width: 100%;
+    min-width: 555px;
+    border-radius: 10px;
+    border: none;
+    background: #504B4A;
+    color: var(--additional-text-color);
+    padding: 16px 60px 16px 48px;
+}
+
+
+::placeholder {
+    color: var(--text-color);
+}
+
+
+
