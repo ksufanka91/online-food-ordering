@@ -70,10 +70,6 @@
     }
 }
 
-.info {
-
-}
-
 .title {
     font-size: 14px;
     color: var(--text-color);
@@ -87,6 +83,7 @@
 
 .serve {
     display: flex;
+    align-items: center;
     gap: 0 30px;
     margin-bottom: 30px;
 }
@@ -125,7 +122,6 @@
     color: var(--additional-text-color);
     font-size: 16px;
     font-weight: 500;
-
 }
 
 .socialsIcons {

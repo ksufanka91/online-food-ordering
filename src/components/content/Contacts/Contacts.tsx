@@ -11,7 +11,7 @@ const Contacts = () => {
                             <div className={styles.icon}>
                                 <img src="images/icons/location-main-color.svg" alt="location"/>
                             </div>
-                            <div className={styles.info}>
+                            <div>
                                 <div className={styles.title}>Наш адрес:</div>
                                 <div className={styles.text}>
                                     МО, городской округ Красногорск, село Ильинcкое,
@@ -23,7 +23,7 @@ const Contacts = () => {
                             <div className={styles.icon}>
                                 <img src="images/icons/message.svg" alt="email"/>
                             </div>
-                            <div className={styles.info}>
+                            <div>
                                 <div className={styles.title}>Наша почта:</div>
                                 <a href="mailto: auto.wash@gmail.com" className={styles.text}>auto.wash@gmail.com</a>
                             </div>
