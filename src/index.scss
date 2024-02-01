@@ -6,6 +6,10 @@
     --form-placeholder-color: #504B4A;
 }
 
+#root {
+    height: 100%;
+}
+
 @font-face {
     font-family: 'Gilroy';
     src: url(fonts/gilroy-bold-webfont.woff2) format("woff2");
@@ -24,6 +28,11 @@
 *:before,
 *:after {
     box-sizing: inherit;
+}
+
+html,
+body {
+    height: 100%;
 }
 
 body {
