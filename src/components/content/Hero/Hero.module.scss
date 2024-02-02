@@ -1,5 +1,12 @@
 .hero {
-    background: url("../../../../public/images/backgrounds/promo-bg.png") no-repeat center;
+    background: url("../../../../public/images/backgrounds/promo-bg.png") no-repeat top;
     background-size: cover;
     padding: 72px 0 124px;
+}
+
+.image {
+    @media (max-width: 1024px) {
+        display: block;
+        margin: 0 auto;
+    }
 }
