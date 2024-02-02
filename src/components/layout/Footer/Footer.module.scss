@@ -6,6 +6,16 @@
         display: flex;
         align-items: center;
         gap: 55px;
+
+        @media (max-width: 768px) {
+            justify-content: center;
+        }
+
+        @media (max-width: 375px) {
+            justify-content: initial;
+            align-items: start;
+            gap: 14px;
+        }
     }
 }
 
@@ -18,17 +28,31 @@
     border-radius: 50%;
     background-color: var(--additional-text-color);
     cursor: pointer;
+
+    @media (max-width: 768px) {
+        width: 54px;
+        height: 54px;
+        flex-shrink: 0;
+    }
 }
 
 .info {
     display: flex;
     flex-direction: column;
     gap: 6px 0;
+
+    @media (max-width: 430px) {
+        text-align: center;
+    }
 }
 
 .logo {
     width: 100px;
     max-width: 100%;
+
+    @media (max-width: 430px) {
+        margin: 0 auto;
+    }
 }
 
 .companyInfo {

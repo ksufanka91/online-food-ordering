@@ -9,4 +9,11 @@
     font-weight: 700;
     color: var(--additional-text-color);
 
+    @media (max-width: 1024px) {
+        font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+        display: none;
+    }
 }
