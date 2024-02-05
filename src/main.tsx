@@ -1,12 +1,17 @@
-import {StrictMode} from 'react'
+import {StrictMode} from 'react';
 import {createRoot} from 'react-dom/client'
+import {Provider as StoreProvider} from 'react-redux';
 import {RouterProvider} from 'react-router-dom';
-import router from '../src/routes/Routes';
+import store from "@/app/store";
+import router from '@/routes/Routes';
+
 import './index.scss';
 import 'normalize.css';
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
-        <RouterProvider router={router}/>
+        <StoreProvider store={store}>
+            <RouterProvider router={router}/>
+        </StoreProvider>
     </StrictMode>
 )
