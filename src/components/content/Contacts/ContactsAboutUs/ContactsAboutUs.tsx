@@ -1,10 +1,10 @@
-import styles from "./Description.module.scss";
+import styles from "./ContactsAboutUs.module.scss";
 
-const Description = () => {
+const ContactsAboutUs = () => {
     return (
         <div className="container-lg">
             <section className={styles.description}>
-                <div className={styles.column}>
+                <div>
                     <h2>Наше кафе</h2>
                     <p className={styles.text}>
                         Мы расположены в одном из самых живописных мест города — на берегу реки, это ваш оазис в черте
@@ -35,8 +35,7 @@ const Description = () => {
                 </div>
             </section>
         </div>
-
     );
 };
 
-export default Description;
+export default ContactsAboutUs;

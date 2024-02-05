@@ -3,7 +3,7 @@
     grid-template-columns: 1fr 470px;
     grid-template-rows: 1fr;
     gap: 0 174px;
-    background: url("../../../../public/images/backgrounds/section-bg.png") no-repeat center;
+    background: url("../../../../../public/images/backgrounds/section-bg.png") no-repeat center;
     background-size: cover;
     padding: 70px 100px 70px 70px;
 }
@@ -29,23 +29,25 @@
     padding: 66px 12px 40px 12px;
     background: rgba(80, 75, 74, 0.90);
     backdrop-filter: blur(2px);
+    transition: 0.5s;
+
+    &:hover {
+        color: #79B282;
+    }
 
 
+}
 
+svg:hover {
+    fill: #79B282;
 }
 
 .subtitle {
 
-    &:hover {
-        color: var(--main-color);
-    }
+
 }
 
 .icon {
     margin-bottom: 26px;
-
-    //&:hover {
-    //    background: var(--main-color);
-    //}
 }
 
