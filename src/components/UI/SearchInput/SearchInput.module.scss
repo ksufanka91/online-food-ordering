@@ -4,7 +4,7 @@
     &:before {
         position: absolute;
         content: '';
-        background: url("../../../../public/images/icons/location.svg") no-repeat;
+        background: url("/images/icons/location.svg") no-repeat;
         width: 18px;
         height: 21px;
         top: 50%;
@@ -15,7 +15,7 @@
     &:after {
         position: absolute;
         content: '';
-        background: url("../../../../public/images/icons/search.svg") no-repeat;
+        background: url("/images/icons/search.svg") no-repeat;
         width: 24px;
         height: 24px;
         top: 50%;

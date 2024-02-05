@@ -1,4 +1,7 @@
 import styles from "./ContactsAboutUs.module.scss";
+import IconOnion from "@icons/onion.svg?react";
+import IconFlash from "@icons/flash.svg?react";
+import IconChef from "@icons/chef.svg?react";
 
 const ContactsAboutUs = () => {
     return (
@@ -13,23 +16,23 @@ const ContactsAboutUs = () => {
                         ресторана и панорамные окна с видом на реку, уютные беседки на берегу реки и лучшая видовая
                         террасса, шатер с посадкой на 200 человек, сказочный детский домик и бассейн.
                     </p>
-                    <button type="button">Посмотреть меню</button>
                 </div>
+
                 <div className={styles.columnCards}>
                     <div className={styles.item}>
-                        <img src="images/icons/onion.svg" alt="onion" className={styles.icon}/>
+                        <IconOnion className={styles.icon}/>
                         <div className={styles.subtitle}>Свежайшие продукты</div>
                     </div>
                     <div className={styles.item}>
-                        <img src="images/icons/flash.svg" alt="delivery" className={styles.icon}/>
+                        <IconFlash className={styles.icon}/>
                         <div className={styles.subtitle}>Быстрая доставка</div>
                     </div>
                     <div className={styles.item}>
-                        <img src="images/icons/chef.svg" alt="chef" className={styles.icon}/>
+                        <IconChef className={styles.icon}/>
                         <div className={styles.subtitle}>Лучшие повора</div>
                     </div>
                     <div className={styles.item}>
-                        <img src="images/icons/onion.svg" alt="onion" className={styles.icon}/>
+                        <IconOnion className={styles.icon}/>
                         <div className={styles.subtitle}>Свежайшие продукты</div>
                     </div>
                 </div>
