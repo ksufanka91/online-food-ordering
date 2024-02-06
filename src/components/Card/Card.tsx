@@ -1,9 +1,15 @@
 import {Link} from "react-router-dom";
+import Product from "@/app/models/Product";
+import {FC} from "react";
 
-const Card = () => {
+type Props = {
+    product: Product
+}
+
+const Card: FC<Props> = ({product}) => {
     return (
         <div>
-            <Link to={'/'}>Card Item</Link>
+            <Link to={'/'}>{product.name}</Link>
         </div>
     );
 };
