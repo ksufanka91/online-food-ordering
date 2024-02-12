@@ -2,6 +2,7 @@ import Hero from "@/components/content/Hero/Hero";
 import Contacts from "@/components/content/Contacts/Contacts";
 import {useEffect} from "react";
 import {fetchProducts} from "@/app/features/catalog/catalogSlice";
+import {fetchCategories} from "@/app/features/categories/categoriesSlice";
 import {useAppDispatch, useAppSelector} from "@/app/hooks";
 import ProductSlider from "@/components/content/ProductSlider/ProductSlider";
 
@@ -9,10 +10,11 @@ const HomePage = () => {
 
     const dispatch = useAppDispatch();
 
-    const [products, loading] = useAppSelector(state => {
+    const [products, loading, categories] = useAppSelector(state => {
         return [
             state.catalog.products,
             state.catalog.loading,
+            state.category.categories,
         ];
     });
 
@@ -20,15 +22,19 @@ const HomePage = () => {
         dispatch(fetchProducts());
     }, []);
 
+
+    useEffect(() => {
+        dispatch(fetchCategories());
+    }, []);
+
     return (
         <>
             <Hero/>
             {loading && 'load data'}
 
-            {/*{!loading && products.map(product => <Card key={product.id} product={product}/>)}*/}
-            {!loading && <ProductSlider title={'test'} products={products}/>}
-            {!loading && <ProductSlider title={'test2'} products={products}/>}
-            {!loading && <ProductSlider title={'test3'} products={products}/>}
+            {!loading && categories.filter(category => category.showOnHomePage)
+                .map(category => <ProductSlider title={category.name} products={products} key={category.id}/>)
+            }
 
             <Contacts showAboutUs={true}/>
         </>

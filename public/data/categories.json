@@ -1,15 +1,18 @@
 [
   {
     "id": 1,
-    "name": "Холодные закуски"
+    "name": "Холодные закуски",
+    "showOnHomePage": true
   },
   {
     "id": 2,
-    "name": "Горячие закуски"
+    "name": "Горячие закуски",
+    "showOnHomePage": true
   },
   {
     "id": 3,
-    "name": "Мясные блюда"
+    "name": "Мясные блюда",
+    "showOnHomePage": true
   },
   {
     "id": 4,
