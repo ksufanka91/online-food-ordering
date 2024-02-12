@@ -2,19 +2,21 @@ import {Link} from "react-router-dom";
 import Product from "@/app/models/Product";
 import {FC} from "react";
 import styles from "./Card.module.scss";
+import classNames from "classnames";
 
 type Props = {
-    product: Product
+    product: Product,
+    className?: string,
 }
 
-const Card: FC<Props> = ({product}) => {
+const Card: FC<Props> = ({product, className}) => {
     return (
-        <Link to={'/'} className={styles.card}>
-            <img src={product.image} alt="product-image" className={styles.image}/>
+        <Link to={'/'} className={classNames(styles.card, className || '')}>
+            {product.image && <img src={product.image} alt="product" className={styles.image}/>}
             <div className={styles.cardInfo}>
                 <div className={styles.titleBox}>
                     <div className={styles.title}>{product.name}</div>
-                    <div className={styles.weight}>{product.weight}</div>
+                    <div className={styles.weight}>Вес: {product.weight}</div>
                 </div>
                 <div className={styles.description}>{product.description}</div>
                 <div className={styles.buyInfo}>

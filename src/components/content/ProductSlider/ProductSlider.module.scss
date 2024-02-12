@@ -1,0 +1,22 @@
+.slider {
+    :global {
+        .slick-track {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: stretch;
+        }
+
+        .slick-slide {
+            height: auto;
+
+            > div {
+                height: 100%;
+            }
+        }
+    }
+}
+
+.productItem {
+    height: 100%;
+}

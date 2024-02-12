@@ -1,17 +1,24 @@
 .card {
-    display: block;
+    display: flex;
+    flex-direction: column;
     width: 325px;
     border-radius: 10px;
     background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
 
 
     &Info {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
         padding: 18px 20px;
     }
 }
 
 .image {
     width: 100%;
+    height: 200px;
+    object-position: center;
+    object-fit: cover;
     border-radius: 10px 10px 0 0;
 }
 
@@ -26,11 +33,11 @@
 .title {
     font-size: 22px;
     font-weight: 700;
-
 }
 
 .weight {
     font-size: 12px;
+    white-space: nowrap;
 }
 
 .description {
@@ -43,6 +50,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: auto;
 }
 
 .price {

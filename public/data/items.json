@@ -138,7 +138,7 @@
     "id": "16",
     "name": "Яблочный сок",
     "description": "Очень вкусно, пальчики оближешь",
-    "image": "/images/products/drinks.jpeg",
+    "image": "/images/products/drinks.jpg",
     "weight": "1000 мл",
     "price": 150,
     "categories": [8]
@@ -147,7 +147,7 @@
     "id": "17",
     "name": "Вишневый сок",
     "description": "Очень вкусно, пальчики оближешь",
-    "image": "/images/products/drinks-2.jpeg",
+    "image": "/images/products/drinks.jpg",
     "weight": "1000 мл",
     "price": 150,
     "categories": [8]
@@ -156,7 +156,7 @@
     "id": "18",
     "name": "Апельсиновый сок",
     "description": "Очень вкусно, пальчики оближешь",
-    "image": "/images/products/drinks-3.jpeg",
+    "image": "/images/products/drinks.jpg",
     "weight": "1000 мл",
     "price": 150,
     "categories": [8]
