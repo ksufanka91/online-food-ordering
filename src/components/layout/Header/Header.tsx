@@ -1,16 +1,10 @@
-import styles from "./Header.module.scss";
 import {Link} from "react-router-dom";
 import classNames from "classnames";
 import SearchInput from "../../UI/SearchInput/SearchInput";
-import {useAppSelector} from "@/app/hooks";
+import Cart from "@/components/content/Cart/Cart";
+import styles from "./Header.module.scss";
 
 const Header = () => {
-    const products = useAppSelector(state => {
-        return state.cart.products;
-    })
-
-    const totalItems = products.reduce((acc, curr) => acc + curr.count, 0);
-
     return (
         <header className={styles.header}>
             <div className="container">
@@ -32,11 +26,8 @@ const Header = () => {
                                 <div className={styles.contactsText}>Контакты:</div>
                                 <a href="tel:+79175105759" className={styles.contactsPhone}>+ 7 (917) 510-57-59</a>
                             </div>
-
                         </div>
-                        <button>
-                            Товаров в корзине {totalItems}
-                        </button>
+                        <Cart/>
                     </div>
                 </div>
             </div>

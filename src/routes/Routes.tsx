@@ -12,6 +12,7 @@ const router = createBrowserRouter([
         Component: Layout,
         children: [
             {path: '', Component: HomePage},
+            // {path: 'cart', Component: CartPage},
             {path: 'delivery', Component: DeliveryPage},
             {path: 'promo', Component: PromoPage},
             {path: 'menu/:id', Component: ProductPage},
