@@ -1,10 +1,11 @@
 .card {
+    position: relative;
     display: flex;
     flex-direction: column;
-    width: 325px;
+    max-width: 325px;
     border-radius: 10px;
     background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
-
+    color: var(--additional-text-color);
 
     &Info {
         display: flex;
@@ -12,6 +13,20 @@
         flex: 1;
         padding: 18px 20px;
     }
+}
+
+.productsInCart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -20px;
+    right: -10px;
+    z-index: 10000;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #79B282;
 }
 
 .image {
@@ -27,7 +42,6 @@
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    color: var(--additional-text-color);
 }
 
 .title {
@@ -51,8 +65,4 @@
     justify-content: space-between;
     align-items: center;
     margin-top: auto;
-}
-
-.price {
-    color: var(--additional-text-color);
 }

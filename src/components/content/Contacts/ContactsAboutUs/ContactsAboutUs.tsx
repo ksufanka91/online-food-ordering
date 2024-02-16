@@ -20,19 +20,28 @@ const ContactsAboutUs = () => {
 
                 <div className={styles.columnCards}>
                     <div className={styles.item}>
-                        <IconOnion className={styles.icon}/>
+                        <div className={styles.iconBox}>
+                            <IconOnion className={styles.icon}/>
+                        </div>
+
                         <div>Свежайшие продукты</div>
                     </div>
                     <div className={styles.item}>
-                        <IconFlash className={styles.icon}/>
+                        <div className={styles.iconBox}>
+                            <IconFlash className={styles.icon}/>
+                        </div>
                         <div>Быстрая доставка</div>
                     </div>
                     <div className={styles.item}>
-                        <IconChef className={styles.icon}/>
-                        <div>Лучшие повора</div>
+                        <div className={styles.iconBox}>
+                            <IconChef className={styles.icon}/>
+                        </div>
+                        <div>Лучшие повара</div>
                     </div>
                     <div className={styles.item}>
-                        <IconOnion className={styles.icon}/>
+                        <div className={styles.iconBox}>
+                            <IconOnion className={styles.icon}/>
+                        </div>
                         <div>Свежайшие продукты</div>
                     </div>
                 </div>

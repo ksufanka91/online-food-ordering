@@ -2,7 +2,8 @@
     display: grid;
     grid-template-columns: 1fr 470px;
     grid-template-rows: 1fr;
-    gap: 0 174px;
+    align-items: start;
+    gap: 0 10%;
     background: url("/images/backgrounds/section-bg.png") no-repeat center;
     background-size: cover;
     padding: 70px 100px 70px 70px;
@@ -34,7 +35,7 @@
 .columnCards {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto 1fr;
     gap: 15px 15px;
 
     @media (max-width: 600px) {
@@ -62,7 +63,12 @@
     }
 }
 
-.icon {
+.iconBox {
+    width: 70px;
+    height: 70px;
     margin-bottom: 26px;
+}
+
+.icon {
     transition: fill 0.5s;
 }

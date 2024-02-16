@@ -15,21 +15,35 @@ const ProductSlider: FC<Props> = ({title, products}) => {
     const settings = {
         className: "center",
         infinite: true,
-        centerPadding: "60px",
+        // centerPadding: "50px",
         slidesToShow: 4,
         swipeToSlide: true,
         arrows: false,
+        responsive: [
+            {
+                breakpoint: 1440,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                }
+            },
+        ]
     };
 
     return (
-        <div className="container-lg">
-            <h2>{title}</h2>
+        <div className={styles.productSlider}>
+            <div className="container-lg">
+                <div className="container">
+                    <h2 className={styles.title}>{title}</h2>
+                </div>
 
-            <Slider {...settings} className={styles.slider}>
-                {products.map(product => (
-                    <Card key={product.id} product={product} className={styles.productItem}/>
-                ))}
-            </Slider>
+                <Slider {...settings} className={styles.slider}>
+                    {products.map(product => (
+                        <Card key={product.id} product={product} className={styles.productItem}/>
+                    ))}
+                </Slider>
+            </div>
         </div>
     );
 };

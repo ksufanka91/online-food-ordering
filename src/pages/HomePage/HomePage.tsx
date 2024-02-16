@@ -10,12 +10,20 @@ const HomePage = () => {
 
     const dispatch = useAppDispatch();
 
-    const [products, loading, categories] = useAppSelector(state => {
-        return [
-            state.catalog.products,
-            state.catalog.loading,
-            state.category.categories,
-        ];
+    const products = useAppSelector(state => {
+        return state.catalog.products;
+    });
+
+    const loadingProducts = useAppSelector(state => {
+        return state.catalog.loading;
+    });
+
+    const categories = useAppSelector(state => {
+        return state.category.categories;
+    });
+
+    const loadingCategories = useAppSelector(state => {
+        return state.category.loading;
     });
 
     useEffect(() => {
@@ -30,9 +38,9 @@ const HomePage = () => {
     return (
         <>
             <Hero/>
-            {loading && 'load data'}
+            {loadingProducts && 'load data'}
 
-            {!loading && categories.filter(category => category.showOnHomePage)
+            {!loadingCategories && categories.filter(category => category.showOnHomePage)
                 .map(category => <ProductSlider title={category.name} products={products} key={category.id}/>)
             }
 

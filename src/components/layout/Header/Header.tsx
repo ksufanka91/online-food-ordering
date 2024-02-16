@@ -2,8 +2,15 @@ import styles from "./Header.module.scss";
 import {Link} from "react-router-dom";
 import classNames from "classnames";
 import SearchInput from "../../UI/SearchInput/SearchInput";
+import {useAppSelector} from "@/app/hooks";
 
 const Header = () => {
+    const products = useAppSelector(state => {
+        return state.cart.products;
+    })
+
+    const totalItems = products.reduce((acc, curr) => acc + curr.count, 0);
+
     return (
         <header className={styles.header}>
             <div className="container">
@@ -28,12 +35,10 @@ const Header = () => {
 
                         </div>
                         <button>
-                            Button
+                            Товаров в корзине {totalItems}
                         </button>
                     </div>
-
                 </div>
-
             </div>
         </header>
     );
