@@ -1,4 +1,5 @@
 import styles from "./ContactsDetails.module.scss";
+import Button from "@/components/UI/Button/Button";
 
 const ContactsDetails = () => {
     return (
@@ -30,7 +31,7 @@ const ContactsDetails = () => {
                         </div>
                     </div>
                     <div className={styles.serve}>
-                        <button type="button" className={styles.button}>ЗАБРОНИРОВАТЬ СТОЛ</button>
+                        <Button type={'link'} size={'big'} className={styles.button}>Забронировать стол</Button>
                         <div className={styles.contactUs}>
                             <a href="tel:+79175105759" className={styles.contactPhone}>+ 7 (917) 510-57-59</a>
                             <div className={styles.contactText}>Звоните или оставляйте заявку</div>
