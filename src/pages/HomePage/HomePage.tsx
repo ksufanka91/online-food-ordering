@@ -5,6 +5,7 @@ import {fetchProducts} from "@/app/features/catalog/catalogSlice";
 import {fetchCategories} from "@/app/features/categories/categoriesSlice";
 import {useAppDispatch, useAppSelector} from "@/app/hooks";
 import ProductSlider from "@/components/content/ProductSlider/ProductSlider";
+import MenuScrollBar from "@/components/content/MenuScrollBar/MenuScrollBar";
 
 const HomePage = () => {
 
@@ -39,6 +40,7 @@ const HomePage = () => {
         <>
             <Hero/>
             {loadingProducts && 'load data'}
+            <MenuScrollBar/>
 
             {!loadingCategories && categories.filter(category => category.showOnHomePage)
                 .map(category => <ProductSlider title={category.name} products={products} key={category.id}/>)

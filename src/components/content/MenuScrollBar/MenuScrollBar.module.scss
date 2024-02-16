@@ -1,0 +1,29 @@
+.menuScrollBar {
+    padding: 28px 0;
+    margin-bottom: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 20px;
+    overflow: auto;
+    white-space: nowrap;
+    -ms-overflow-style: none;
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    &Item {
+        color: var(--text-color);
+        transition: color 0.3s;
+
+        &:hover {
+            color: var(--additional-text-color);
+        }
+    }
+}
