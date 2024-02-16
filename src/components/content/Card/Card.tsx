@@ -1,15 +1,15 @@
 import {FC} from "react";
 import {Link} from "react-router-dom";
 import Product from "@/app/models/Product";
+import IconCart from "@/icons/cart.svg?react";
+import IconAdd from "@/icons/plus.svg?react";
+import IconRemove from "@/icons/minus.svg?react";
 import {addToCart, removeFromCart} from "@/app/features/cart/cartSlice";
 import {useAppDispatch, useAppSelector} from "@/app/hooks";
 import classNames from "classnames";
 import Button from "@/components/UI/Button/Button";
-import IconCart from "@/icons/cart.svg?react";
-import IconAdd from "@/icons/plus.svg?react";
-import IconRemove from "@/icons/minus.svg?react";
+import priceFormat from "@/utils/priceFormat";
 import styles from "./Card.module.scss";
-
 
 type Props = {
     product: Product,
@@ -43,7 +43,9 @@ const Card: FC<Props> = ({product, className}) => {
                                 dispatch(removeFromCart(product));
                             }}>
                             </Button>
-                            <div className={styles.price}>{product.price} &#8381;</div>
+                            <div className={styles.price}>
+                                {priceFormat(product.price * countInCart)}
+                            </div>
                             <Button icon={<IconAdd/>} type={'button'} onClick={() => {
                                 dispatch(addToCart(product));
                             }}>
@@ -53,7 +55,7 @@ const Card: FC<Props> = ({product, className}) => {
 
                     {countInCart === 0 &&
                         <>
-                            <div className={styles.price}>{product.price} &#8381;</div>
+                            <div className={styles.price}>{priceFormat(product.price)}</div>
                             <Button icon={<IconCart/>} type={'button'} onClick={() => {dispatch(addToCart(product))}}>В корзину</Button>
                         </>
                     }

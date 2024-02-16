@@ -1,6 +1,6 @@
+import react from '@vitejs/plugin-react';
 import {defineConfig} from 'vite'
 import {fileURLToPath, URL} from "url";
-import react from '@vitejs/plugin-react';
 import svgr from "vite-plugin-svgr";
 import checker from "vite-plugin-checker";
 
@@ -17,6 +17,7 @@ export default defineConfig({
         alias: [
             {find: '@', replacement: fileURLToPath(new URL('./src', import.meta.url))},
             {find: '@icons', replacement: fileURLToPath(new URL('./src/icons', import.meta.url))},
+            {find: '@utils', replacement: fileURLToPath(new URL('./src/utils', import.meta.url))},
         ]
     }
 })
