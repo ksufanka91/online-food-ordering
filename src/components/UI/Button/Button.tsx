@@ -4,31 +4,31 @@ import styles from "./Button.module.scss";
 import {Link} from "react-router-dom";
 
 interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
-    icon: ReactNode;
     type: "submit" | "reset" | "button" | "link";
+    icon?: ReactNode;
     href?: string;
+    size?: "default" | "big"
 }
 
-const Button: FC<ButtonProps> = ({type, href, className, children, icon, ...props}) => {
+const Button: FC<ButtonProps> = ({type, href, className, children, icon = null, size = "default", ...props}) => {
     if (type === 'link' && href) {
         return (
             <Link to={href} className={classNames(styles.button, {
-                [styles.buttonWithIcon]: icon,
             }, className || '')}>
                 {children}
-                {icon && <span className={styles.buttonIcon}>{icon}</span>}
+                {icon && <span>{icon}</span>}
             </Link>
         )
     }
 
     return (
         <button className={classNames(styles.button, {
-            [styles.buttonWithIcon]: icon,
+            [styles.buttonBig]: size === 'big',
         }, className || '')}
                 {...props}>
             <div className={styles.buttonBox}>
                 {children}
-                {icon && <span className={styles.buttonIcon}>{icon}</span>}
+                {icon}
             </div>
         </button>
     );

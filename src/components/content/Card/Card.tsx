@@ -6,6 +6,8 @@ import {useAppDispatch, useAppSelector} from "@/app/hooks";
 import classNames from "classnames";
 import Button from "@/components/UI/Button/Button";
 import IconCart from "@/icons/cart.svg?react";
+import IconAdd from "@/icons/plus.svg?react";
+import IconRemove from "@/icons/minus.svg?react";
 import styles from "./Card.module.scss";
 
 
@@ -35,16 +37,26 @@ const Card: FC<Props> = ({product, className}) => {
                 </div>
                 <div className={styles.description}>{product.description}</div>
                 <div className={styles.buyInfo}>
-                    <div className={styles.price}>{product.price} &#8381;</div>
-                    <button onClick={() => {
-                        dispatch(removeFromCart(product));
-                    }}>минус
-                    </button>
-                    <button onClick={() => {
-                        dispatch(addToCart(product));
-                    }}>плюс
-                    </button>
-                    <Button icon={<IconCart/>} type={'button'} onClick={() => {dispatch(addToCart(product))}}>В корзину</Button>
+                    {countInCart > 0 &&
+                        <>
+                            <Button icon={<IconRemove/>} type={'button'} onClick={() => {
+                                dispatch(removeFromCart(product));
+                            }}>
+                            </Button>
+                            <div className={styles.price}>{product.price} &#8381;</div>
+                            <Button icon={<IconAdd/>} type={'button'} onClick={() => {
+                                dispatch(addToCart(product));
+                            }}>
+                            </Button>
+                        </>
+                    }
+
+                    {countInCart === 0 &&
+                        <>
+                            <div className={styles.price}>{product.price} &#8381;</div>
+                            <Button icon={<IconCart/>} type={'button'} onClick={() => {dispatch(addToCart(product))}}>В корзину</Button>
+                        </>
+                    }
                 </div>
             </div>
         </Link>
