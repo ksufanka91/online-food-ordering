@@ -1,0 +1,39 @@
+.button {
+    display: inline-block;
+    max-width: 100%;
+    padding: 10px 16px;
+    background: var(--main-color);
+    color: var(--additional-text-color);
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+
+    }
+
+    &:disabled {
+
+    }
+
+    &:active {
+
+    }
+
+    &WithIcon {
+
+    }
+}
+
+.buttonBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 12px
+}
+
+.buttonIcon {
+
+}

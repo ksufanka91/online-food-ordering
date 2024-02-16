@@ -1,10 +1,13 @@
+import {FC} from "react";
 import {Link} from "react-router-dom";
 import Product from "@/app/models/Product";
-import {FC} from "react";
-import styles from "./Card.module.scss";
-import classNames from "classnames";
 import {addToCart, removeFromCart} from "@/app/features/cart/cartSlice";
 import {useAppDispatch, useAppSelector} from "@/app/hooks";
+import classNames from "classnames";
+import Button from "@/components/UI/Button/Button";
+import IconCart from "@/icons/cart.svg?react";
+import styles from "./Card.module.scss";
+
 
 type Props = {
     product: Product,
@@ -41,6 +44,7 @@ const Card: FC<Props> = ({product, className}) => {
                         dispatch(addToCart(product));
                     }}>плюс
                     </button>
+                    <Button icon={<IconCart/>} type={'button'} onClick={() => {dispatch(addToCart(product))}}>В корзину</Button>
                 </div>
             </div>
         </Link>
