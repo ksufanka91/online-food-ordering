@@ -2,36 +2,44 @@
   {
     "id": 1,
     "name": "Холодные закуски",
+    "slug": "holodnye-zakuski",
     "showOnHomePage": true
   },
   {
     "id": 2,
     "name": "Горячие закуски",
+    "slug": "goryachie-zakuski",
     "showOnHomePage": true
   },
   {
     "id": 3,
     "name": "Мясные блюда",
+    "slug": "myasnye-blyuda",
     "showOnHomePage": true
   },
   {
     "id": 4,
-    "name": "Супы"
+    "name": "Супы",
+    "slug": "supy"
   },
   {
     "id": 5,
-    "name": "Рыбные блюда"
+    "name": "Рыбные блюда",
+    "slug": "rybnye-blyuda"
   },
   {
     "id": 6,
-    "name": "Гриль меню"
+    "name": "Гриль меню",
+    "slug": "gril-menu"
   },
   {
     "id": 7,
-    "name": "Фирменные блюда"
+    "name": "Фирменные блюда",
+    "slug": "firmennye-blyuda"
   },
   {
     "id": 8,
-    "name": "Напитки"
+    "name": "Напитки",
+    "slug": "napitki"
   }
 ]
