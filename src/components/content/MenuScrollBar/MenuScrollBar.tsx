@@ -1,12 +1,11 @@
-import styles from "./MenuScrollBar.module.scss";
 import {Link} from "react-router-dom";
 import {useAppSelector} from "@/app/hooks";
+import styles from "./MenuScrollBar.module.scss";
 
 const MenuScrollBar = () => {
     const categories = useAppSelector(state => {
         return state.category.categories;
     })
-
 
     return (
         <section className={styles.menuScrollBar}>
