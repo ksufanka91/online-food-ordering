@@ -17,7 +17,6 @@ const Cart: FC = () => {
                 Корзина
                 <span className={styles.totalItems}>{totalItems}</span>
             </div>
-
         </Link>
     );
 };
