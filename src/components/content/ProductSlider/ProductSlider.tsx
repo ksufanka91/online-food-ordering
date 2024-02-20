@@ -2,6 +2,7 @@ import Slider from "react-slick";
 import {FC} from "react";
 import Product from "@/app/models/Product";
 import Card from "@/components/content/Card/Card";
+import MainTitle from "@/components/UI/MainTitle/MainTitle";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styles from "./ProductSlider.module.scss";
@@ -17,6 +18,7 @@ const ProductSlider: FC<Props> = ({title, products}) => {
         infinite: true,
         // centerPadding: "50px",
         slidesToShow: 4,
+        slidesToScroll: 2,
         swipeToSlide: true,
         arrows: false,
         responsive: [
@@ -24,7 +26,7 @@ const ProductSlider: FC<Props> = ({title, products}) => {
                 breakpoint: 1440,
                 settings: {
                     slidesToShow: 3,
-                    slidesToScroll: 3,
+                    slidesToScroll: 1,
                     infinite: true,
                 }
             },
@@ -35,7 +37,7 @@ const ProductSlider: FC<Props> = ({title, products}) => {
         <div className={styles.productSlider}>
             <div className="container-lg">
                 <div className="container">
-                    <h2 className={styles.title}>{title}</h2>
+                    <MainTitle title={title}/>
                 </div>
 
                 <Slider {...settings} className={styles.slider}>
