@@ -3,7 +3,7 @@ import Product from "@/app/models/Product";
 interface Category {
     id: number,
     name: string;
-    link: string;
+    slug: string,
     showOnHomePage: boolean;
     products?: Product[];
 }

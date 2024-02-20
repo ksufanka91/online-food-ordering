@@ -6,6 +6,7 @@ interface Product {
     image?: string;
     description?: string;
     weight?: string;
+    categories: number[];
 }
 
 export default Product;
