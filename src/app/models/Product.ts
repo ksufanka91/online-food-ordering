@@ -4,14 +4,14 @@ interface Product {
     slug: string;
     link: string;
     price: number;
-    image?: string;
-    description?: string;
-    weight?: string;
-    categories: number[];
     proteins: number,
     fats: number,
     carbohydrates: number,
     kilocalories: number,
+    categories: number[];
+    image?: string;
+    description?: string;
+    weight?: string;
 }
 
 export default Product;
