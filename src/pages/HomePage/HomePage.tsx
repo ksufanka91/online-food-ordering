@@ -36,14 +36,18 @@ const HomePage = () => {
         dispatch(fetchCategories());
     }, []);
 
+
     return (
         <>
             <Hero/>
             {loadingProducts && 'load data'}
             <MenuScrollBar/>
 
-            {!loadingCategories && categories.filter(category => category.showOnHomePage)
-                .map(category => <ProductSlider title={category.name} products={products} key={category.id}/>)
+            {!loadingCategories && categories
+                .filter(category => category.showOnHomePage)
+                .map(category => <ProductSlider key={category.id}
+                                                title={category.name}
+                                                products={products.filter(product => product.categories.includes(category.id))}/>)
             }
 
             <Contacts showAboutUs={true}/>
