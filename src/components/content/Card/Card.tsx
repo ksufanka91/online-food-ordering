@@ -39,14 +39,16 @@ const Card: FC<Props> = ({product, className}) => {
                 <div className={styles.buyInfo}>
                     {countInCart > 0 &&
                         <>
-                            <Button icon={<IconRemove/>} type={'button'} onClick={() => {
+                            <Button icon={<IconRemove/>} type={'button'} onClick={(e) => {
+                                e.preventDefault();
                                 dispatch(removeFromCart(product));
                             }}>
                             </Button>
                             <div className={styles.price}>
                                 {priceFormat(product.price * countInCart)}
                             </div>
-                            <Button icon={<IconAdd/>} type={'button'} onClick={() => {
+                            <Button icon={<IconAdd/>} type={'button'} onClick={(e) => {
+                                e.preventDefault();
                                 dispatch(addToCart(product));
                             }}>
                             </Button>
@@ -56,7 +58,10 @@ const Card: FC<Props> = ({product, className}) => {
                     {countInCart === 0 &&
                         <>
                             <div className={styles.price}>{priceFormat(product.price)}</div>
-                            <Button icon={<IconCart/>} type={'button'} onClick={() => {dispatch(addToCart(product))}}>В корзину</Button>
+                            <Button icon={<IconCart/>} type={'button'} onClick={(e) => {
+                                e.preventDefault();
+                                dispatch(addToCart(product));
+                            }}>В корзину</Button>
                         </>
                     }
                 </div>
