@@ -2,6 +2,7 @@
   {
     "id": 1,
     "name": "Ягненок",
+    "slug":"yagnenok",
     "description": "Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком",
     "image": "/images/products/special-menu.jpg",
     "weight": "225 г",
@@ -11,6 +12,7 @@
   {
     "id": "2",
     "name": "Индейка",
+    "slug": "indejka",
     "description": "Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком",
     "image": "/images/products/special-menu-2.jpg",
     "weight": "300 г",
@@ -20,6 +22,7 @@
   {
     "id": "3",
     "name": "Щука",
+    "slug": "shuka",
     "description": "Фаршированная яблоками",
     "image": "/images/products/special-menu-3.jpg",
     "weight": "225 г",
@@ -29,6 +32,7 @@
   {
     "id": "4",
     "name": "Утка",
+    "slug": "utka",
     "description": "Фаршированная рисом, курагой и айвой",
     "image": "/images/products/special-menu-4.jpg",
     "weight": "225 г",
@@ -38,6 +42,7 @@
   {
     "id": "5",
     "name": "Слабосоленый лосось",
+    "slug": "slabosolenyj-losos",
     "description": "Очень вкусно, пальчики оближешь",
     "image": "/images/products/cold-snacks.jpeg",
     "weight": "150 г",
@@ -47,6 +52,7 @@
   {
     "id": "6",
     "name": "Мясная нарезка",
+    "slug": "myasnaya-narezka",
     "description": "Очень вкусно, пальчики оближешь",
     "image": "/images/products/cold-snacks-2.jpeg",
     "weight": "300 г",
@@ -56,6 +62,7 @@
   {
     "id": "7",
     "name": "Сальце с чесночком",
+    "slug": "salce-s-chesnochkom",
     "description": "Очень вкусно, пальчики оближешь",
     "image": "/images/products/cold-snacks-3.jpeg",
     "weight": "200 г",
@@ -65,6 +72,7 @@
   {
     "id": "8",
     "name": "Селедочка с лучком",
+    "slug": "seledochka-s-luchkom",
     "description": "Очень вкусно, пальчики оближешь",
     "image": "/images/products/cold-snacks-4.jpeg",
     "weight": "300 г",
@@ -74,6 +82,7 @@
   {
     "id": "9",
     "name": "Мидии",
+    "slug": "midii",
     "description": "Очень вкусно, пальчики оближешь",
     "image": "/images/products/hot-snacks.jpeg",
     "weight": "225 г",
@@ -83,6 +92,7 @@
   {
     "id": "10",
     "name": "Кольца кальмара",
+    "slug": "kolca-kalmara",
     "description": "Очень вкусно, пальчики оближешь",
     "image": "/images/products/hot-snacks-2.jpeg",
     "weight": "300 г",
@@ -92,6 +102,7 @@
   {
     "id": "11",
     "name": "Жареный сыр",
+    "slug": "zharenyj-syr",
     "description": "Очень вкусно, пальчики оближешь",
     "image": "/images/products/hot-snacks-3.jpeg",
     "weight": "225 г",
@@ -101,6 +112,7 @@
   {
     "id": "12",
     "name": "Куриный суп-лапша",
+    "slug": "kurinyj-sup-lapsha",
     "description": "Очень вкусно, пальчики оближешь",
     "image": "/images/products/soup.jpeg",
     "weight": "300 г",
@@ -110,6 +122,7 @@
   {
     "id": "13",
     "name": "Дорадо",
+    "slug": "dorado",
     "description": "Очень вкусно, пальчики оближешь",
     "image": "/images/products/mangal.jpeg",
     "weight": "350 г",
@@ -119,6 +132,7 @@
   {
     "id": "14",
     "name": "Свиной шашлык",
+    "slug": "svinoj-shashlyk",
     "description": "Очень вкусно, пальчики оближешь",
     "image": "/images/products/mangal-2.jpeg",
     "weight": "350 г",
@@ -128,6 +142,7 @@
   {
     "id": "15",
     "name": "Стейк",
+    "slug": "stejk",
     "description": "Очень вкусно, пальчики оближешь",
     "image": "/images/products/mangal-3.jpeg",
     "weight": "400 г",
@@ -137,6 +152,7 @@
   {
     "id": "16",
     "name": "Яблочный сок",
+    "slug": "yablochnyj-sok",
     "description": "Очень вкусно, пальчики оближешь",
     "image": "/images/products/drinks.jpg",
     "weight": "1000 мл",
@@ -146,6 +162,7 @@
   {
     "id": "17",
     "name": "Вишневый сок",
+    "slug": "vishnevyj-sok",
     "description": "Очень вкусно, пальчики оближешь",
     "image": "/images/products/drinks.jpg",
     "weight": "1000 мл",
@@ -155,6 +172,7 @@
   {
     "id": "18",
     "name": "Апельсиновый сок",
+    "slug": "apelsinovyj-sok",
     "description": "Очень вкусно, пальчики оближешь",
     "image": "/images/products/drinks.jpg",
     "weight": "1000 мл",

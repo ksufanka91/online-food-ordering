@@ -26,7 +26,7 @@ const Card: FC<Props> = ({product, className}) => {
     const countInCart = productsInCart.find(item => item.id === product.id)?.count || 0;
 
     return (
-        <Link to={'/'} className={classNames(styles.card, className || '')}>
+        <Link to={`/menu/${product.slug}`} className={classNames(styles.card, className || '')}>
             {product.image && <img src={product.image} alt="product" className={styles.image}/>}
 
             <div className={styles.cardInfo}>
@@ -67,7 +67,6 @@ const Card: FC<Props> = ({product, className}) => {
                 </div>
             </div>
         </Link>
-
     );
 };
 
