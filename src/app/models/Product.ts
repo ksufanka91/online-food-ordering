@@ -8,6 +8,10 @@ interface Product {
     description?: string;
     weight?: string;
     categories: number[];
+    proteins: number,
+    fats: number,
+    carbohydrates: number,
+    kilocalories: number,
 }
 
 export default Product;
