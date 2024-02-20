@@ -7,7 +7,11 @@
     "image": "/images/products/special-menu.jpg",
     "weight": "225 г",
     "price": 620,
-    "categories": [3, 7]
+    "categories": [3, 7],
+    "proteins": 17.23,
+    "fats": 7.63,
+    "carbohydrates": 22.35,
+    "kilocalories": 234
   },
   {
     "id": "2",
@@ -17,7 +21,11 @@
     "image": "/images/products/special-menu-2.jpg",
     "weight": "300 г",
     "price": 550,
-    "categories": [3, 7]
+    "categories": [3, 7],
+    "proteins": 10,
+    "fats": 4.20,
+    "carbohydrates": 20.35,
+    "kilocalories": 187
   },
   {
     "id": "3",
@@ -27,7 +35,11 @@
     "image": "/images/products/special-menu-3.jpg",
     "weight": "225 г",
     "price": 490,
-    "categories": [5, 7]
+    "categories": [5, 7],
+    "proteins": 17.23,
+    "fats": 7.63,
+    "carbohydrates": 22.35,
+    "kilocalories": 234
   },
   {
     "id": "4",
@@ -37,7 +49,11 @@
     "image": "/images/products/special-menu-4.jpg",
     "weight": "225 г",
     "price": 640,
-    "categories": [3, 7]
+    "categories": [3, 7],
+    "proteins": 10,
+    "fats": 4.20,
+    "carbohydrates": 20.35,
+    "kilocalories": 187
   },
   {
     "id": "5",
@@ -47,7 +63,11 @@
     "image": "/images/products/cold-snacks.jpeg",
     "weight": "150 г",
     "price": 620,
-    "categories": [1, 5]
+    "categories": [1, 5],
+    "proteins": 17.23,
+    "fats": 7.63,
+    "carbohydrates": 22.35,
+    "kilocalories": 234
   },
   {
     "id": "6",
@@ -57,7 +77,11 @@
     "image": "/images/products/cold-snacks-2.jpeg",
     "weight": "300 г",
     "price": 750,
-    "categories": [1]
+    "categories": [1],
+    "proteins": 17.23,
+    "fats": 7.63,
+    "carbohydrates": 22.35,
+    "kilocalories": 234
   },
   {
     "id": "7",
@@ -67,7 +91,11 @@
     "image": "/images/products/cold-snacks-3.jpeg",
     "weight": "200 г",
     "price": 490,
-    "categories": [1]
+    "categories": [1],
+    "proteins": 17.23,
+    "fats": 7.63,
+    "carbohydrates": 22.35,
+    "kilocalories": 234
   },
   {
     "id": "8",
@@ -77,7 +105,11 @@
     "image": "/images/products/cold-snacks-4.jpeg",
     "weight": "300 г",
     "price": 500,
-    "categories": [1, 5]
+    "categories": [1, 5],
+    "proteins": 17.23,
+    "fats": 7.63,
+    "carbohydrates": 22.35,
+    "kilocalories": 234
   },
   {
     "id": "9",
@@ -87,7 +119,11 @@
     "image": "/images/products/hot-snacks.jpeg",
     "weight": "225 г",
     "price": 620,
-    "categories": [2]
+    "categories": [2],
+    "proteins": 10,
+    "fats": 4.20,
+    "carbohydrates": 20.35,
+    "kilocalories": 187
   },
   {
     "id": "10",
@@ -97,7 +133,11 @@
     "image": "/images/products/hot-snacks-2.jpeg",
     "weight": "300 г",
     "price": 550,
-    "categories": [2]
+    "categories": [2],
+    "proteins": 17.23,
+    "fats": 7.63,
+    "carbohydrates": 22.35,
+    "kilocalories": 234
   },
   {
     "id": "11",
@@ -107,7 +147,11 @@
     "image": "/images/products/hot-snacks-3.jpeg",
     "weight": "225 г",
     "price": 640,
-    "categories": [2]
+    "categories": [2],
+    "proteins": 17.23,
+    "fats": 7.63,
+    "carbohydrates": 22.35,
+    "kilocalories": 234
   },
   {
     "id": "12",
@@ -117,7 +161,11 @@
     "image": "/images/products/soup.jpeg",
     "weight": "300 г",
     "price": 350,
-    "categories": [4]
+    "categories": [4],
+    "proteins": 10,
+    "fats": 4.20,
+    "carbohydrates": 20.35,
+    "kilocalories": 187
   },
   {
     "id": "13",
@@ -127,7 +175,11 @@
     "image": "/images/products/mangal.jpeg",
     "weight": "350 г",
     "price": 550,
-    "categories": [5, 6]
+    "categories": [5, 6],
+    "proteins": 10,
+    "fats": 4.20,
+    "carbohydrates": 20.35,
+    "kilocalories": 187
   },
   {
     "id": "14",
@@ -137,7 +189,11 @@
     "image": "/images/products/mangal-2.jpeg",
     "weight": "350 г",
     "price": 640,
-    "categories": [3, 6]
+    "categories": [3, 6],
+    "proteins": 17.23,
+    "fats": 7.63,
+    "carbohydrates": 22.35,
+    "kilocalories": 234
   },
   {
     "id": "15",
@@ -147,7 +203,11 @@
     "image": "/images/products/mangal-3.jpeg",
     "weight": "400 г",
     "price": 1900,
-    "categories": [3, 6]
+    "categories": [3, 6],
+    "proteins": 17.23,
+    "fats": 7.63,
+    "carbohydrates": 22.35,
+    "kilocalories": 234
   },
   {
     "id": "16",
@@ -157,7 +217,11 @@
     "image": "/images/products/drinks.jpg",
     "weight": "1000 мл",
     "price": 150,
-    "categories": [8]
+    "categories": [8],
+    "proteins": 10,
+    "fats": 4.20,
+    "carbohydrates": 20.35,
+    "kilocalories": 187
   },
   {
     "id": "17",
@@ -167,7 +231,11 @@
     "image": "/images/products/drinks.jpg",
     "weight": "1000 мл",
     "price": 150,
-    "categories": [8]
+    "categories": [8],
+    "proteins": 10,
+    "fats": 4.20,
+    "carbohydrates": 20.35,
+    "kilocalories": 187
   },
   {
     "id": "18",
@@ -177,6 +245,10 @@
     "image": "/images/products/drinks.jpg",
     "weight": "1000 мл",
     "price": 150,
-    "categories": [8]
+    "categories": [8],
+    "proteins": 10,
+    "fats": 4.20,
+    "carbohydrates": 20.35,
+    "kilocalories": 187
   }
 ]
