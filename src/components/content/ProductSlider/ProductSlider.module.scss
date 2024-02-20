@@ -25,20 +25,3 @@
 .productItem {
     height: 100%;
 }
-
-.title {
-    position: relative;
-    margin-bottom: 30px;
-    padding-left: 20px;
-
-    &:before {
-        position: absolute;
-        content: '';
-        left: -14px;
-        top: 43%;
-        width: 33px;
-        height: 4px;
-        transform: rotate(90deg);
-        background-color: #618967;
-    }
-}
