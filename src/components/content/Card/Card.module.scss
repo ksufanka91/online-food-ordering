@@ -52,6 +52,10 @@
 .title {
     font-size: 22px;
     font-weight: 700;
+
+    @media (max-width: 768px) {
+        font-size: 20px;
+    }
 }
 
 .weight {
@@ -63,6 +67,10 @@
     font-size: 14px;
     color: var(--text-color);
     margin-bottom: 16px;
+
+    @media (max-width: 768px) {
+        font-size: 12px;
+    }
 }
 
 .buyInfo {
