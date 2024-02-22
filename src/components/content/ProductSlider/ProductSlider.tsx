@@ -1,50 +1,56 @@
-import Slider from "react-slick";
 import {FC} from "react";
 import Product from "@/app/models/Product";
+import {Swiper, SwiperSlide, SwiperProps} from 'swiper/react';
+import {Pagination} from 'swiper/modules';
 import Card from "@/components/content/Card/Card";
 import MainTitle from "@/components/UI/MainTitle/MainTitle";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import 'swiper/css';
+import 'swiper/css/pagination';
 import styles from "./ProductSlider.module.scss";
 
 type Props = {
-    title: string;
-    products: Product[]
+    products: Product[];
+    title?: string;
 }
 
-const ProductSlider: FC<Props> = ({title, products}) => {
-    const settings = {
-        className: "center",
-        infinite: true,
-        // centerPadding: "50px",
-        slidesToShow: 4,
-        slidesToScroll: 2,
-        swipeToSlide: true,
-        arrows: false,
-        responsive: [
-            {
-                breakpoint: 1440,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    infinite: true,
-                }
+const ProductSlider: FC<Props> = ({products, title}) => {
+    const params: SwiperProps = {
+        modules: [Pagination],
+        spaceBetween: 16,
+        slidesPerView: 4,
+        pagination: {clickable: true},
+        breakpoints: {
+            1400: {
+                slidesPerView: 4,
             },
-        ]
-    };
+            1200: {
+                slidesPerView: 3,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            320: {
+                slidesPerView: 1,
+            }
+        }
+    }
 
     return (
         <div className={styles.productSlider}>
             <div className="container-lg">
-                <div className="container">
-                    <MainTitle title={title}/>
-                </div>
+                {title && (
+                    <div className="container">
+                        <MainTitle title={title}/>
+                    </div>
+                )}
 
-                <Slider {...settings} className={styles.slider}>
+                <Swiper {...params}>
                     {products.map(product => (
-                        <Card key={product.id} product={product} className={styles.productItem}/>
+                        <SwiperSlide key={product.id}>
+                            <Card product={product} className={styles.productItem}/>
+                        </SwiperSlide>
                     ))}
-                </Slider>
+                </Swiper>
             </div>
         </div>
     );

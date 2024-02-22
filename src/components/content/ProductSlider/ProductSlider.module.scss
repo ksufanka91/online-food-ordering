@@ -1,27 +1,21 @@
 .productSlider {
-    margin-bottom: 100px;
-}
+    margin-bottom: 50px;
 
-.slider {
+    .productItem {
+        height: 100%;
+    }
+
     :global {
-        .slick-track {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            align-items: stretch;
-            padding-top: 20px;
+        .swiper {
+            padding: 20px 10px 50px 0;
         }
 
-        .slick-slide {
+        .swiper-slide {
             height: auto;
+        }
 
-            > div {
-                height: 100%;
-            }
+        .swiper-pagination-bullet-active {
+            background-color: #72A479;
         }
     }
-}
-
-.productItem {
-    height: 100%;
 }
