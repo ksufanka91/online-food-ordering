@@ -1,14 +1,14 @@
 import {combineSlices, configureStore} from "@reduxjs/toolkit";
-import counterSlice from "@/app/features/counter/counterSlice";
 import catalogSlice from "@/app/features/catalog/catalogSlice";
 import categoriesSlice from "@/app/features/categories/categoriesSlice";
 import cartSlice from "@/app/features/cart/cartSlice";
+import promoSlice from "@/app/features/promo/PromoSlice";
 
 const rootReducer = combineSlices({
-    counter: counterSlice,
     catalog: catalogSlice,
     category: categoriesSlice,
     cart: cartSlice,
+    promo: promoSlice,
 });
 
 const store = configureStore({
