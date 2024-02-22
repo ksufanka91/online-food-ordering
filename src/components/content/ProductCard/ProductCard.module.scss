@@ -1,16 +1,33 @@
-.card {
+.cardBox {
+    @media (max-width: 1000px) {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.productCard {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     border-radius: 10px;
     margin-bottom: 50px;
     background: linear-gradient(0deg, #494544 0%, #504B4A 100%);
 
-    &Info {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        gap: 10px 0;
-        padding: 38px 50px 26px;
+    @media (max-width: 1000px) {
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 500px;
+    }
+}
+
+.cardInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px 0;
+    padding: 38px 50px 26px;
+
+    @media (max-width: 1000px) {
+        padding: 20px;
+        text-align: center;
     }
 }
 
@@ -34,6 +51,10 @@
     align-items: center;
     gap: 0 26px;
     margin-bottom: 30px;
+
+    @media (max-width: 1000px) {
+        justify-content: center;
+    }
 }
 
 .price {
@@ -46,12 +67,28 @@
     width: 100%;
     height: 100%;
     border-radius: 10px 0 0 10px;
+
+    @media (max-width: 1000px) {
+        height: 280px;
+        object-fit: cover;
+        border-radius: 10px 10px 0 0;
+    }
 }
 
 .items {
     display: flex;
     gap: 0 50px;
     align-items: center;
+
+    @media (max-width: 1000px) {
+        gap: 0 20px;
+        justify-content: center;
+    }
+
+    @media (max-width: 375px) {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
 }
 
 .item {
