@@ -2,10 +2,14 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    max-width: 325px;
     border-radius: 10px;
     background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
     color: var(--additional-text-color);
+
+    @media (max-width: 1400px) {
+        width: 100%;
+        max-width: initial;
+    }
 
     &Info {
         display: flex;

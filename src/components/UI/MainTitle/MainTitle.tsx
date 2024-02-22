@@ -2,7 +2,7 @@ import {FC} from "react";
 import styles from "./MainTitle.module.scss";
 
 type Props = {
-    title: string,
+    title?: string,
 }
 
 const MainTitle: FC<Props>  = ({title}) => {

@@ -1,9 +1,10 @@
-import {FC} from "react";
+import {FC, useEffect} from "react";
 import {Link} from "react-router-dom";
-import {useAppSelector} from "@/app/hooks";
+import {useAppDispatch, useAppSelector} from "@/app/hooks";
 import classNames from "classnames";
 import styles from "./MenuScrollBar.module.scss";
 import Category from "@/app/models/Category";
+import {fetchCategories} from "@/app/features/categories/categoriesSlice";
 
 type Props = {
     activeCategory?: Category | null,
@@ -13,6 +14,12 @@ const MenuScrollBar: FC<Props> = ({activeCategory}) => {
     const categories = useAppSelector(state => {
         return state.category.categories;
     });
+
+    const dispatch = useAppDispatch();
+
+    useEffect(() => {
+        dispatch(fetchCategories());
+    }, []);
 
     return (
         <section className={styles.menuScrollBar}>
