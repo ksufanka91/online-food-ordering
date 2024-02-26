@@ -1,13 +1,14 @@
-import styles from "./Footer.module.scss";
 import {Link} from "react-router-dom";
 import Navbar from "../../Navbar/Navbar";
+import styles from "./Footer.module.scss";
 
 const Footer = () => {
     return (
         <footer className={styles.footer}>
             <div className="container">
                 <div className={styles.footerBox}>
-                    <div className={styles.scrollToTop}>
+                    <div className={styles.scrollToTop}
+                         onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
                         <img src="images/icons/arrow.svg" alt="arrow-to-top"/>
                     </div>
 
@@ -25,9 +26,7 @@ const Footer = () => {
                     </div>
                     <Navbar/>
                 </div>
-
             </div>
-
         </footer>
     );
 };
