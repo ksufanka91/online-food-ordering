@@ -1,6 +1,5 @@
 import {createAsyncThunk, createSlice, PayloadAction} from "@reduxjs/toolkit";
 import Promo from "@/app/models/Promo";
-import Category from "@/app/models/Category";
 
 
 type stateType = {

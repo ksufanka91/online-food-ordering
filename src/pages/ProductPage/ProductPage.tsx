@@ -30,7 +30,7 @@ const ProductPage = () => {
     }
 
     return (
-        <section className={styles.productPage}>
+        <div className={styles.productPage}>
             <MenuScrollBar/>
 
             <div className="container">
@@ -44,7 +44,7 @@ const ProductPage = () => {
             </div>
 
             <Contacts showAboutUs={false}/>
-        </section>
+        </div>
     );
 };
 
