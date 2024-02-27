@@ -5,8 +5,8 @@ import {RouterProvider} from 'react-router-dom';
 import store from "@/app/store";
 import router from '@/routes/Routes';
 
-import './index.scss';
 import 'normalize.css';
+import './index.scss';
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>

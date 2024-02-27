@@ -2,7 +2,9 @@ import {Outlet} from "react-router-dom";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import ScrollToTop from "@/components/layout/ScrollToTop";
+import CartIsEmptyModal from "@/components/content/CartIsEmptyModal/CartIsEmptyModal";
 import styles from "./Layout.module.scss";
+
 
 const Layout = () => {
     return (
@@ -14,6 +16,9 @@ const Layout = () => {
             </main>
 
             <Footer/>
+
+            <CartIsEmptyModal/>
+
             <ScrollToTop/>
         </div>
     );

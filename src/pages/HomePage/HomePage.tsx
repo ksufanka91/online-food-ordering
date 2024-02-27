@@ -31,16 +31,15 @@ const HomePage = () => {
         dispatch(fetchProducts());
     }, []);
 
-
     useEffect(() => {
         dispatch(fetchCategories());
     }, []);
 
-
     return (
         <>
             <Hero/>
-            {loadingProducts && 'load data'}
+
+            {loadingProducts && 'Загрузка данных'}
             <MenuScrollBar/>
 
             {!loadingCategories && categories

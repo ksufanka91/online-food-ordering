@@ -7,10 +7,12 @@ interface ProductInCart extends Product {
 
 type InitialState = {
     products: ProductInCart[],
+    showModal: boolean,
 }
 
 const initialState: InitialState = {
     products: [],
+    showModal: false,
 }
 
 const cartSlice = createSlice({
@@ -44,9 +46,16 @@ const cartSlice = createSlice({
                     return item;
                 }).filter(item => item.count > 0)
             }
-        }
-    }
-})
+        },
+        showModal: (state) => {
+            state.showModal = true;
+        },
 
-export const {addToCart, removeFromCart} = cartSlice.actions;
+        hideModal: (state) => {
+            state.showModal = false;
+        },
+    }
+});
+
+export const {addToCart, removeFromCart, hideModal, showModal} = cartSlice.actions;
 export default cartSlice.reducer;

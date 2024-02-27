@@ -37,7 +37,7 @@ const CategoryPage = () => {
     }
 
     return (
-        <section className={styles.categoryPage}>
+        <div className={styles.categoryPage}>
             <MenuScrollBar activeCategory={category}/>
 
             {category && (
@@ -55,7 +55,7 @@ const CategoryPage = () => {
             )}
 
             <Contacts showAboutUs={false}/>
-        </section>
+        </div>
     );
 };
 
