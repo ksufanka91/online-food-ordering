@@ -1,7 +1,6 @@
 import {createAsyncThunk, createSlice, PayloadAction} from "@reduxjs/toolkit";
 import Promo from "@/app/models/Promo";
 
-
 type stateType = {
     loading: boolean,
     promos: Promo[],
