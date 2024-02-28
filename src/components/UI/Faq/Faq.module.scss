@@ -1,0 +1,40 @@
+:global {
+    .accordion {
+        .accordion__button {
+            position: relative;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            background: var(--main-color);
+            color: var(--additional-text-color);
+
+            @media (max-width: 430px) {
+                font-size: 16px;
+            }
+
+             &:before {
+                 position: absolute;
+                 right: 20px;
+                 top: calc(50% - 7px);
+             }
+        }
+
+        .accordion__item {
+            background-color: var(--form-placeholder-color);
+            border-radius: 10px;
+            margin-bottom: 10px;
+
+        }
+
+        .accordion__panel {
+            font-size: 16px;
+
+            @media (max-width: 430px) {
+                font-size: 14px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+    }
+
+
+}

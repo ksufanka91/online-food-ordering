@@ -1,6 +1,6 @@
 import {useEffect} from "react";
 import {useAppDispatch, useAppSelector} from "@/app/hooks";
-import {fetchPromos} from "@/app/features/promo/PromoSlice";
+import {fetchPromos} from "@/app/features/promo/promoSlice";
 import MenuScrollBar from "@/components/content/MenuScrollBar/MenuScrollBar";
 import MainTitle from "@/components/UI/MainTitle/MainTitle";
 import PromoCard from "@/components/content/PromoCard/PromoCard";

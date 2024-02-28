@@ -39,7 +39,7 @@
 
 html,
 body {
-    height: 100%;
+    height: max-content;
 }
 
 body {
@@ -49,7 +49,8 @@ body {
     font-size: 18px;
     line-height: 1.5;
     color: var(--text-color);
-    background: #44403F;
+    background: var(--background-color) no-repeat;
+    background-size: cover;
     min-width: 320px;
 }
 

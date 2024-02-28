@@ -1,0 +1,58 @@
+.accordionBox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+
+    @media (max-width: 1024px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.image {
+    background: url("images/backgrounds/map-bg.jpg") no-repeat;
+    background-size: cover;
+    min-height: 600px;
+    max-height: 0;
+    border-radius: 10px;
+
+    @media (max-width: 1024px) {
+        display: none;
+    }
+}
+
+.schedule {
+    display: flex;
+    align-items: center;
+    gap: 20px 100px;
+    margin-bottom: 40px;
+
+    @media (max-width: 600px) {
+        font-size: 14px;
+        gap: 50px;
+    }
+
+    @media (max-width: 430px) {
+        flex-direction: column;
+       align-items: flex-start;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+.title {
+    color: var(--additional-text-color);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.minOrder {
+    @media (max-width: 600px) {
+        font-size: 14px;
+    }
+}
+
+.description {
+    max-width: 640px;
+    margin-bottom: 38px;
+}

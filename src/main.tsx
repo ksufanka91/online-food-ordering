@@ -7,6 +7,7 @@ import router from '@/routes/Routes';
 
 import 'normalize.css';
 import './index.scss';
+import 'react-accessible-accordion/dist/fancy-example.css';
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
