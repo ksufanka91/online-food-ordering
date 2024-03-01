@@ -1,7 +1,7 @@
 import {createSlice, PayloadAction} from "@reduxjs/toolkit";
 import Product from "@/app/models/Product";
 
-interface ProductInCart extends Product {
+export interface ProductInCart extends Product {
     count: number;
 }
 
@@ -47,6 +47,9 @@ const cartSlice = createSlice({
                 }).filter(item => item.count > 0)
             }
         },
+        removeFromCartAll: (state, action: PayloadAction<Product>) => {
+            state.products = state.products.filter(item => item.id !== action.payload.id);
+        },
         showModal: (state) => {
             state.showModal = true;
         },
@@ -57,5 +60,5 @@ const cartSlice = createSlice({
     }
 });
 
-export const {addToCart, removeFromCart, hideModal, showModal} = cartSlice.actions;
+export const {addToCart, removeFromCart, removeFromCartAll, hideModal, showModal} = cartSlice.actions;
 export default cartSlice.reducer;
