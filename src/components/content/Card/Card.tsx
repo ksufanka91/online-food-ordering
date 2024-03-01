@@ -44,7 +44,7 @@ const Card: FC<Props> = ({product, className}) => {
                                 dispatch(removeFromCart(product));
                             }}>
                             </Button>
-                            <div className={styles.price}>
+                            <div>
                                 {priceFormat(product.price * countInCart)}
                             </div>
                             <Button icon={<IconAdd/>} type={'button'} onClick={(e) => {
@@ -57,7 +57,7 @@ const Card: FC<Props> = ({product, className}) => {
 
                     {countInCart === 0 &&
                         <>
-                            <div className={styles.price}>{priceFormat(product.price)}</div>
+                            <div>{priceFormat(product.price)}</div>
                             <Button icon={<IconCart/>} type={'button'} onClick={(e) => {
                                 e.preventDefault();
                                 dispatch(addToCart(product));
