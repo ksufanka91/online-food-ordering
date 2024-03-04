@@ -1,14 +1,43 @@
-import {Link} from "react-router-dom";
+import {useEffect, useRef, useState} from "react";
 import classNames from "classnames";
+import {disableBodyScroll, enableBodyScroll} from "body-scroll-lock";
+import {Link, useLocation} from "react-router-dom";
 import SearchInput from "../../UI/SearchInput/SearchInput";
 import Cart from "@/components/content/Cart/Cart";
+import MobileMenu from "@/components/layout/MobileMenu/MobileMenu";
+import HamburgerButton from "@/components/layout/MobileMenu/HumburgerButton/HumburgerButton";
 import styles from "./Header.module.scss";
 
 const Header = () => {
+    const refMenu = useRef(null);
+
+    const [isMenuOpen, setIsOpenMenu] = useState(false);
+
+    const {pathname} = useLocation();
+
+    useEffect(() => {
+        if (isMenuOpen) {
+            toggleMenuMode();
+        }
+    }, [pathname]);
+
+    function toggleMenuMode() {
+        setIsOpenMenu(!isMenuOpen);
+
+        if (isMenuOpen) {
+            enableBodyScroll(refMenu.current!);
+        } else {
+            disableBodyScroll(refMenu.current!);
+        }
+    }
+
     return (
         <header className={styles.header}>
             <div className="container">
                 <div className={styles.content}>
+
+                   <HamburgerButton isMenuOpen={isMenuOpen} toggleMenuMode={toggleMenuMode}/>
+
                     <div className={classNames(styles.item, styles.itemLeft)}>
                         <Link to={'/'} className={styles.logo}>
                             <img src="images/icons/logo.png" alt="logo"/>
@@ -31,6 +60,8 @@ const Header = () => {
                     </div>
                 </div>
             </div>
+
+            <MobileMenu ref={refMenu} open={isMenuOpen}/>
         </header>
     );
 };

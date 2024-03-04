@@ -1,0 +1,20 @@
+.mobileMenu {
+    display: none;
+}
+
+.mobileMenuOpen {
+    display: none;
+
+    @media (max-width: 600px) {
+        display: block;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: var(--form-placeholder-color);
+        padding: 100px 20px;
+
+    }
+}

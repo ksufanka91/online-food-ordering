@@ -1,6 +1,14 @@
 .inputBox {
     position: relative;
 
+    @media (max-width: 1300px) {
+        width: 400px;
+    }
+
+    @media (max-width: 1100px) {
+        display: none;
+    }
+
     &:before {
         position: absolute;
         content: '';
@@ -26,22 +34,14 @@
 
 .input {
     max-width: 100%;
-    min-width: 555px;
+    width: 555px;
     border-radius: 10px;
     border: none;
     background: #504B4A;
     color: var(--additional-text-color);
     padding: 16px 60px 16px 48px;
-
-    @media (max-width: 1100px) {
-        display: none;
-    }
 }
-
 
 ::placeholder {
     color: var(--text-color);
 }
-
-
-

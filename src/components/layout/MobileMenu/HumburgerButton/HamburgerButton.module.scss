@@ -1,0 +1,10 @@
+.burgerMenu {
+    display: none;
+
+    @media (max-width: 600px) {
+        display: block;
+        background: transparent;
+        border: none;
+        z-index: 1000;
+    }
+}

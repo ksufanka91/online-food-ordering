@@ -21,7 +21,7 @@ const Cart: FC = () => {
             }
         }}>
             <div className={styles.cartBox}>
-                Корзина
+                <span className={styles.text}>Корзина</span>
                 <span className={styles.totalItems}>{totalItems}</span>
             </div>
         </Link>

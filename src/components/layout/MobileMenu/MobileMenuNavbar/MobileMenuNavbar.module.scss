@@ -1,0 +1,12 @@
+.nav {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.link {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--additional-text-color);
+}
