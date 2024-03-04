@@ -26,7 +26,7 @@ const ContactsDetails = () => {
                             </div>
                             <div>
                                 <div className={styles.title}>Наша почта:</div>
-                                <a href="mailto: auto.wash@gmail.com" className={styles.text}>auto.wash@gmail.com</a>
+                                <a href="mailto: order.food@gmail.com" className={styles.text}>order.food@gmail.com</a>
                             </div>
                         </div>
                     </div>
