@@ -6,6 +6,7 @@
 
     @media (max-width: 768px) {
         padding: 0;
+        margin-bottom: 60px;
     }
 }
 
@@ -18,10 +19,29 @@
     margin: 0 auto 90px;
     border-radius: 10px;
     background: var(--form-placeholder-color);
+
+    @media (max-width: 1024px) {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    @media (max-width: 430px) {
+        flex-direction: column;
+    }
+}
+
+.price {
+    @media (max-width: 430px) {
+        margin-bottom: 20px;
+    }
 }
 
 .totalPrice {
     font-size: 26px;
     font-weight: 700;
     color: var(--additional-text-color);
+
+    @media (max-width: 430px) {
+        font-size: 20px;
+    }
 }

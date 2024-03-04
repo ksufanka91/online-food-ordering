@@ -33,7 +33,7 @@ const CartPage = () => {
 
                 {productsInCart.length > 0 && (
                     <div className={styles.order}>
-                        <div>Итого: <span className={styles.totalPrice}>{priceFormat(totalPrice)}</span></div>
+                        <div className={styles.price}>Итого: <span className={styles.totalPrice}>{priceFormat(totalPrice)}</span></div>
                         <Button type={"link"} size={"big"}>Оформить заказ</Button>
                     </div>
                 )}
