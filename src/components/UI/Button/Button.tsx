@@ -14,6 +14,7 @@ const Button: FC<ButtonProps> = ({type, href, className, children, icon = null, 
     if (type === 'link' && href) {
         return (
             <Link to={href} className={classNames(styles.button, {
+                [styles.buttonBig]: size === 'big',
             }, className || '')}>
                 {children}
                 {icon && <span>{icon}</span>}

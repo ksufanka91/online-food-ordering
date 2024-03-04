@@ -1,4 +1,4 @@
-import {useAppDispatch, useAppSelector} from "@/app/hooks";
+import {useAppSelector} from "@/app/hooks";
 import MenuScrollBar from "@/components/content/MenuScrollBar/MenuScrollBar";
 import MainTitle from "@/components/UI/MainTitle/MainTitle";
 import Button from "@/components/UI/Button/Button";
@@ -7,15 +7,11 @@ import priceFormat from "@/utils/priceFormat";
 import styles from "./CartPage.module.scss";
 
 const CartPage = () => {
-    const dispatch = useAppDispatch();
-
     const productsInCart = useAppSelector(state => {
         return state.cart.products;
     });
 
-
     const totalPrice = productsInCart.map(item => item.count * item.price).reduce((acc, curr) => acc + curr, 0);
-
 
     return (
         <>
@@ -34,7 +30,7 @@ const CartPage = () => {
                 {productsInCart.length > 0 && (
                     <div className={styles.order}>
                         <div className={styles.price}>Итого: <span className={styles.totalPrice}>{priceFormat(totalPrice)}</span></div>
-                        <Button type={"link"} size={"big"}>Оформить заказ</Button>
+                        <Button href={"/notfound"} type={"link"} size={"big"}>Оформить заказ</Button>
                     </div>
                 )}
             </div>
