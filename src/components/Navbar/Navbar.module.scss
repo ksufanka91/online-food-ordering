@@ -5,9 +5,27 @@
 }
 
 .link {
+    position: relative;
     font-size: 20px;
     font-weight: 700;
     color: var(--additional-text-color);
+
+    &:hover {
+        &:before {
+            opacity: 1;
+        }
+    }
+
+    &:before {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        opacity: 0;
+        transition: opacity 0.5s;
+        background: var(--main-color);
+    }
 
     @media (max-width: 1024px) {
         font-size: 14px;
