@@ -14,7 +14,7 @@ const initialState: stateType = {
 }
 
 export const fetchCategories = createAsyncThunk<Category[]>('category/fetchCategories', async () => {
-    const response = await fetch('/data/categories.json');
+    const response = await fetch('data/categories.json');
     const categories = await response.json() as Category[];
 
     if (!Array.isArray(categories)) {

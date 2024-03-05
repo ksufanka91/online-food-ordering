@@ -14,7 +14,7 @@ const initialState: stateType = {
 }
 
 export const fetchProducts = createAsyncThunk<Product[]>('product/fetchProducts', async () => {
-    const response = await fetch('/data/products.json');
+    const response = await fetch('data/products.json');
     const products = await response.json() as Product[];
 
     if (!Array.isArray(products)) {
