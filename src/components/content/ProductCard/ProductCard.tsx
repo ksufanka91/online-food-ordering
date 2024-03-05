@@ -1,10 +1,10 @@
 import {FC} from "react";
-import Product from "@/app/models/Product";
-import IconCart from "@/icons/cart.svg?react";
 import {useAppDispatch} from "@/app/hooks";
 import {addToCart} from "@/app/features/cart/cartSlice";
-import Button from "@/components/UI/Button/Button";
 import priceFormat from "@/utils/priceFormat";
+import Product from "@/app/models/Product";
+import IconCart from "@/icons/cart.svg?react";
+import Button from "@/components/UI/Button/Button";
 import styles from "./ProductCard.module.scss";
 
 type Props = {
@@ -56,10 +56,8 @@ const ProductCard: FC<Props> = ({product}) => {
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
-
         </div>
     );
 };

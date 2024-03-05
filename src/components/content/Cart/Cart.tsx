@@ -1,8 +1,8 @@
-import {Link} from "react-router-dom";
 import {FC} from "react";
+import {Link} from "react-router-dom";
 import {useAppDispatch, useAppSelector} from "@/app/hooks";
-import styles from "./Cart.module.scss";
 import {showModal} from "@/app/features/cart/cartSlice";
+import styles from "./Cart.module.scss";
 
 const Cart: FC = () => {
     const dispatch = useAppDispatch();

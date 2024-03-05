@@ -11,11 +11,11 @@
                 font-size: 16px;
             }
 
-             &:before {
-                 position: absolute;
-                 right: 20px;
-                 top: calc(50% - 7px);
-             }
+            &:before {
+                position: absolute;
+                right: 20px;
+                top: calc(50% - 7px);
+            }
         }
 
         .accordion__item {
@@ -35,6 +35,4 @@
             }
         }
     }
-
-
 }

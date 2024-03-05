@@ -2,9 +2,9 @@ import {FC, useEffect} from "react";
 import {Link} from "react-router-dom";
 import {useAppDispatch, useAppSelector} from "@/app/hooks";
 import classNames from "classnames";
-import styles from "./MenuScrollBar.module.scss";
-import Category from "@/app/models/Category";
 import {fetchCategories} from "@/app/features/categories/categoriesSlice";
+import Category from "@/app/models/Category";
+import styles from "./MenuScrollBar.module.scss";
 
 type Props = {
     activeCategory?: Category | null,

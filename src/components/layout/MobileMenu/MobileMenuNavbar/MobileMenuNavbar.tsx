@@ -1,5 +1,5 @@
-import styles from "./MobileMenuNavbar.module.scss";
 import {Link} from "react-router-dom";
+import styles from "./MobileMenuNavbar.module.scss";
 
 
 const MobileMenuNavbar = () => {

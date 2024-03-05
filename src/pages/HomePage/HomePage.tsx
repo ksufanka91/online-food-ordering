@@ -1,9 +1,9 @@
-import Hero from "@/components/content/Hero/Hero";
-import Contacts from "@/components/content/Contacts/Contacts";
 import {useEffect} from "react";
 import {fetchProducts} from "@/app/features/catalog/catalogSlice";
 import {fetchCategories} from "@/app/features/categories/categoriesSlice";
 import {useAppDispatch, useAppSelector} from "@/app/hooks";
+import Hero from "@/components/content/Hero/Hero";
+import Contacts from "@/components/content/Contacts/Contacts";
 import ProductSlider from "@/components/content/ProductSlider/ProductSlider";
 import MenuScrollBar from "@/components/content/MenuScrollBar/MenuScrollBar";
 

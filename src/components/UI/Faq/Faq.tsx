@@ -6,7 +6,6 @@ import {
     AccordionItemHeading,
     AccordionItemPanel,
 } from 'react-accessible-accordion';
-
 import {default as FaqModel} from "@/app/models/Faq";
 import styles from "./Faq.module.scss";
 

@@ -1,7 +1,7 @@
+import {Link, useLocation} from "react-router-dom";
 import {useEffect, useRef, useState} from "react";
 import classNames from "classnames";
 import {disableBodyScroll, enableBodyScroll} from "body-scroll-lock";
-import {Link, useLocation} from "react-router-dom";
 import SearchInput from "../../UI/SearchInput/SearchInput";
 import Cart from "@/components/content/Cart/Cart";
 import MobileMenu from "@/components/layout/MobileMenu/MobileMenu";
@@ -36,7 +36,7 @@ const Header = () => {
             <div className="container">
                 <div className={styles.content}>
 
-                   <HamburgerButton isMenuOpen={isMenuOpen} toggleMenuMode={toggleMenuMode}/>
+                    <HamburgerButton isMenuOpen={isMenuOpen} toggleMenuMode={toggleMenuMode}/>
 
                     <div className={classNames(styles.item, styles.itemLeft)}>
                         <Link to={'/'} className={styles.logo}>
@@ -51,7 +51,7 @@ const Header = () => {
                             <div className={styles.contactsIcon}>
                                 <img src="images/icons/phone.svg" alt="phone"/>
                             </div>
-                            <div className={styles.contactsInfo}>
+                            <div>
                                 <div className={styles.contactsText}>Контакты:</div>
                                 <a href="tel:+79175105759" className={styles.contactsPhone}>+ 7 (917) 510-57-59</a>
                             </div>
@@ -60,7 +60,6 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-
             <MobileMenu ref={refMenu} open={isMenuOpen}/>
         </header>
     );

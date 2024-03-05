@@ -1,6 +1,6 @@
 import {FC} from "react";
-import styles from "./PromoCard.module.scss";
 import Promo from "@/app/models/Promo";
+import styles from "./PromoCard.module.scss";
 
 type Props = {
     promo: Promo,

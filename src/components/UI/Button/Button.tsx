@@ -1,7 +1,7 @@
+import {Link} from "react-router-dom";
 import {FC, HTMLAttributes, ReactNode} from "react";
 import classNames from "classnames";
 import styles from "./Button.module.scss";
-import {Link} from "react-router-dom";
 
 interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
     type: "submit" | "reset" | "button" | "link";

@@ -7,8 +7,8 @@ import Contacts from "@/components/content/Contacts/Contacts";
 import MenuScrollBar from "@/components/content/MenuScrollBar/MenuScrollBar";
 import MainTitle from "@/components/UI/MainTitle/MainTitle";
 import Card from "@/components/content/Card/Card";
-import styles from "./CategoryPage.module.scss";
 import Category from "@/app/models/Category";
+import styles from "./CategoryPage.module.scss";
 
 const CategoryPage = () => {
     const {slug} = useParams();
@@ -37,7 +37,7 @@ const CategoryPage = () => {
     }
 
     return (
-        <div className={styles.categoryPage}>
+        <div>
             <MenuScrollBar activeCategory={category}/>
 
             {category && (
@@ -49,11 +49,9 @@ const CategoryPage = () => {
                                 .filter(item => item.categories.includes(category?.id || 0))
                                 .map(card => <Card key={card.id} product={card}/>)}
                         </div>
-
                     </div>
                 </>
             )}
-
             <Contacts showAboutUs={false}/>
         </div>
     );

@@ -5,10 +5,9 @@ import {fetchProducts} from "@/app/features/catalog/catalogSlice";
 import MenuScrollBar from "@/components/content/MenuScrollBar/MenuScrollBar";
 import Contacts from "@/components/content/Contacts/Contacts";
 import ProductCard from "@/components/content/ProductCard/ProductCard";
-import Product from "@/app/models/Product";
-import styles from "./ProductPage.module.scss";
 import MainTitle from "@/components/UI/MainTitle/MainTitle";
 import ProductSlider from "@/components/content/ProductSlider/ProductSlider";
+import Product from "@/app/models/Product";
 
 
 const ProductPage = () => {
@@ -30,7 +29,7 @@ const ProductPage = () => {
     }
 
     return (
-        <div className={styles.productPage}>
+        <div>
             <MenuScrollBar/>
 
             <div className="container">

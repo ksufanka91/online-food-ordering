@@ -1,14 +1,14 @@
 import {FC} from "react";
+import {addToCart, removeFromCart} from "@/app/features/cart/cartSlice";
+import {useAppDispatch, useAppSelector} from "@/app/hooks";
 import {Link} from "react-router-dom";
+import classNames from "classnames";
 import Product from "@/app/models/Product";
 import IconCart from "@/icons/cart.svg?react";
 import IconAdd from "@/icons/plus.svg?react";
 import IconRemove from "@/icons/minus.svg?react";
-import {addToCart, removeFromCart} from "@/app/features/cart/cartSlice";
-import {useAppDispatch, useAppSelector} from "@/app/hooks";
-import classNames from "classnames";
-import Button from "@/components/UI/Button/Button";
 import priceFormat from "@/utils/priceFormat";
+import Button from "@/components/UI/Button/Button";
 import styles from "./Card.module.scss";
 
 type Props = {

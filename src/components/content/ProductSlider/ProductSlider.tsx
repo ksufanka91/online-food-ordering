@@ -1,7 +1,7 @@
 import {FC} from "react";
-import Product from "@/app/models/Product";
-import {Swiper, SwiperSlide, SwiperProps} from 'swiper/react';
+import {Swiper, SwiperProps, SwiperSlide} from 'swiper/react';
 import {Pagination} from 'swiper/modules';
+import Product from "@/app/models/Product";
 import Card from "@/components/content/Card/Card";
 import MainTitle from "@/components/UI/MainTitle/MainTitle";
 import 'swiper/css';

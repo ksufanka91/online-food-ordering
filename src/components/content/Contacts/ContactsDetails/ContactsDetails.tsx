@@ -1,5 +1,5 @@
-import styles from "./ContactsDetails.module.scss";
 import Button from "@/components/UI/Button/Button";
+import styles from "./ContactsDetails.module.scss";
 
 const ContactsDetails = () => {
     return (

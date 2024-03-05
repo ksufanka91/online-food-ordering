@@ -1,7 +1,7 @@
-import styles from "./MobileMenu.module.scss";
-import MobileMenuNavbar from "@/components/layout/MobileMenu/MobileMenuNavbar/MobileMenuNavbar";
 import {forwardRef} from "react";
 import classNames from "classnames";
+import MobileMenuNavbar from "@/components/layout/MobileMenu/MobileMenuNavbar/MobileMenuNavbar";
+import styles from "./MobileMenu.module.scss";
 
 type Props = {
     open: boolean

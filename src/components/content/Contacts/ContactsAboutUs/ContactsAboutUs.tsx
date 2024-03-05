@@ -1,7 +1,7 @@
-import styles from "./ContactsAboutUs.module.scss";
 import IconOnion from "@icons/onion.svg?react";
 import IconFlash from "@icons/flash.svg?react";
 import IconChef from "@icons/chef.svg?react";
+import styles from "./ContactsAboutUs.module.scss";
 
 const ContactsAboutUs = () => {
     return (

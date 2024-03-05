@@ -38,7 +38,6 @@ const PromoPage = () => {
                             <PromoCard key={promo.id} promo={promo}/>
                         ))}
                     </div>
-
                 </div>
             )}
         </>

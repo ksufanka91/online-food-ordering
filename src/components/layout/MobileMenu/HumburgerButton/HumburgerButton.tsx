@@ -1,5 +1,5 @@
-import styles from "./HamburgerButton.module.scss";
 import {FC} from "react";
+import styles from "./HamburgerButton.module.scss";
 
 type Props = {
     isMenuOpen: boolean;
